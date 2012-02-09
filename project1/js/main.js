@@ -65,6 +65,13 @@ var Calc= (function (){
                 display.value = 'Purchases over $10,000 gives you a 10% discount!';
                 return;
             }
+        },
+        persist : function () {
+            if(total.value > 0) {
+                saveResult(total.value);
+                alert('Result saved!'); //callback ??
+            }
+            else alert('Empty!');
         }
 
     }
