@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+
+</head>
+<body>
+<form oninput="Calc.calculateCost();">
+    <h2>The Happy Pigeon Amusement Park</h2>
+    <label>Number of children</label>
+    <br />
+    <input type="number" name="" id="txtChildCount" value="0" min="0">
+    <br />
+    <br />
+    <br />
+    <label>Number of adults</label>
+    <br />
+    <input type="number" name="" id="txtAdultCount" value="0" min="0">
+    <br />
+    <br />
+    <br />
+    <label>Total Cost:</label>
+    $<output id="total" name="total">0</output>.00
+    <br />
+    <br />
+    <output id="display" class="display" name="display"></output>
+</form>
+
+</body>
+</html>
