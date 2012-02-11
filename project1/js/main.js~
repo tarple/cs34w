@@ -77,12 +77,12 @@ var Calc= (function (){
     }
 })();
 
-//
-// The following function updates the application cache if there is anything that has been updated
-// Sourced from : http://www.html5rocks.com/en/tutorials/appcache/beginner/
+
 window.applicationCache.addEventListener('updateready', function(e) {
     if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
         window.applicationCache.swapCache();
+        if (confirm('A new version of this site is available. Load it?')) {
             window.location.reload();
+        }
     }
 }, false);
